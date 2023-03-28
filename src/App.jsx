@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import "./App.css";
 
-import Login from "./components/Login/Login";
+// import Login from "./components/Login/Login";
 
 import Header from "./components/Header/Header";
 import Contact from "./components/Contact/Contact";
@@ -14,7 +14,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   const [watchTime, setWatchTime] = useState(0);
-
   const handleWatchTime = (time) => {
     const previousWatchTime = JSON.parse(localStorage.getItem("watchTime"));
     if (previousWatchTime) {
